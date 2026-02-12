@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Estática</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Buscador de Pokémon</h1>
+        
+        <form id="search-form" class="search-form">
+            <input type="text" 
+                   id="search-input"
+                   placeholder="Introduce el nombre o número (ej: 25 o pikachu)"
+                   required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="error-container" class="error-message" style="display: none;"></div>
+
+        <div id="pokemon-detail" class="pokemon-card" style="display: none;">
+            </div>
+
+        <div id="grid-section" class="grid-section">
+            <h2>🔥 Pokémon Destacados</h2>
+            <div id="pokemon-grid" class="pokemon-grid">
+                </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
